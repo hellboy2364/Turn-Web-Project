@@ -1,0 +1,51 @@
+<div id="fon">
+  <div class="pos-con">
+    <div class="profile-container" *ngIf="currentUser">
+      <h1>Профиль</h1>
+      <div class="pole">
+        <strong>ID:</strong> {{ currentUser.id}}
+      </div>
+      <div class="pole">
+        <strong>Nickname:</strong> {{ currentUser.nickname}}
+      </div>
+      <div class="pole">
+        <strong>Имя:</strong> {{ currentUser.name }}
+      </div>
+      <div class="pole">
+        <strong>Фамилия:</strong> {{ currentUser.surname }}
+      </div>
+      <div class="pole">
+        <strong>Email:</strong> {{ currentUser.email }}
+      </div>
+
+      <button class="exit" (click)="exit()">Выйти</button>
+      
+      <h1>Ваши команды:</h1>
+      <ul *ngIf="userTeams.length > 0; else noTeams">
+        <li *ngFor="let team of userTeams">
+          <strong>{{ team.name }}</strong> ({{ team.gameType }})
+          <button class="exit" (click)="leave(team.id)">Покинуть</button>
+       </li>
+      </ul>
+
+      <ng-template #noTeams>
+        <p>Вы пока не состоите в командах.</p>
+      </ng-template>
+
+      <h1>Ваши турниры:</h1>
+      <ul *ngIf="userTurns.length > 0; else noTurns">
+        <li *ngFor="let turn of userTurns">
+          <strong>{{ turn.name }}</strong>
+       </li>
+      </ul>
+
+      <ng-template #noTurns>
+        <p>Вы пока не участвуете в турнирах.</p>
+      </ng-template>
+
+    </div>
+        
+    
+  </div>
+      
+</div>

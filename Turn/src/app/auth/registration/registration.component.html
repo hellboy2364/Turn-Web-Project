@@ -1,0 +1,51 @@
+<div id="fon">
+    <div class="conteiner">
+        <div class="registerf">
+            <h1>Регистрация</h1>
+            <form class="form" [formGroup]="regform" (ngSubmit)="onSubmit()">
+                
+                <div [ngClass]="{'has-error': regform.get('nickname')?.invalid && regform.get('nickname')?.touched}">
+                    <input formControlName="nickname" type="text" class="pole" placeholder="Никнейм">
+                    <span class="form-help-text" *ngIf="regform.get('nickname')?.invalid && regform.get('nickname')?.touched">
+                        <span *ngIf="regform.get('nickname')?.errors?.['required']">Nickname не может быть пустым. </span>
+                    </span>
+                </div>
+
+                <div [ngClass]="{'has-error': regform.get('name')?.invalid && regform.get('name')?.touched}">
+                    <input formControlName="name" type="text" class="pole" placeholder="Имя">
+                    <span class="form-help-text" *ngIf="regform.get('name')?.invalid && regform.get('name')?.touched">
+                        <span *ngIf="regform.get('name')?.errors?.['required']">Имя не может быть пустым. </span>
+                    </span>
+                </div>
+
+                <div [ngClass]="{'has-error': regform.get('surname')?.invalid && regform.get('surname')?.touched}">
+                    <input formControlName="surname" type="text" class="pole" placeholder="Фамилия">
+                    <span class="form-help-text" *ngIf="regform.get('surname')?.invalid && regform.get('surname')?.touched">
+                        <span *ngIf="regform.get('surname')?.errors?.['required']">Фамилия не может быть пустой. </span>
+                    </span>
+                </div>
+
+                <div [ngClass]="{'has-error': regform.get('email')?.invalid && regform.get('email')?.touched}">
+                    <input formControlName="email" type="email" class="pole" placeholder="Электронная почта">
+                    <span class="form-help-text" *ngIf="regform.get('email')?.invalid && regform.get('email')?.touched">
+                        <span *ngIf="regform.get('email')?.errors?.['required']">Email не может быть пустым. </span>
+                        <span *ngIf="regform.get('email')?.errors?.['email']">Введите корректный email. </span>
+                    </span>    
+                </div>
+
+                <div [ngClass]="{'has-error': regform.get('password')?.invalid && regform.get('password')?.touched}">
+                    <input formControlName="password" type="password" class="pole" placeholder="Введите пароль">
+                    <span class="form-help-text" *ngIf="regform.get('email')?.invalid && regform.get('email')?.touched">
+                        <span *ngIf="regform.get('password')?.errors?.['required']">Пароль не может быть пустым. </span>
+                        <span *ngIf="regform.get('password')?.errors?.['minlength'] && regform.get('password')?.errors?.['minlength']['requiredLength']">Пароль должен быть больше {{ regform.get('password')?.errors?.['minlength']['requiredLength'] }}символов. Сейчас {{ regform.get('password')?.errors?.['minlength']['actualLength'] }}.</span>
+                    </span>
+                </div>
+
+                <button type="submit" [disabled]="regform.invalid">Зарегистрироваться</button>
+            </form>
+
+            <button (click)="switchToLogin()">Уже есть аккаунт? Войти</button>
+        </div>
+    </div>
+</div>
+

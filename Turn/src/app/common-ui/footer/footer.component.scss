@@ -1,0 +1,25 @@
+/* footer {
+    background-color: black/* rgb(117, 94, 65) */;
+    /* height: 200px;
+} */ 
+footer {
+    background-color: #1c1c1c; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    padding: 20px 20px; /* Отступы */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.footer-container {
+    max-width: 1200px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрируем на странице */
+}
+
+.footer-info, .footer-contacts {
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.footer-container p {
+    margin: 0; /* Убираем отступы */
+}
+
+

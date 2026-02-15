@@ -1,0 +1,12 @@
+<div class="tournament">
+    <h1 style="color: #4caf50; font-size: 6ch;">{{ tournament.name }}</h1>
+    <p><strong style="font-size:x-large;">Формат:</strong> {{ tournament.format }}</p>
+    <p><strong style="font-size:x-large;">Дата и время:</strong> {{ tournament.date }} {{ tournament.time }}</p>
+    <p><strong style="font-size:x-large;">Свободных мест:</strong> {{ tournament.max_num }}</p>
+    <p><strong style="font-size:x-large;">Участники:</strong></p>
+    <ul>
+      <li *ngFor="let team of participantTeams">{{ team.name }}</li>
+    </ul>
+    <button id="uchav" (click)="onParticipate()">Участвовать</button>
+    <button id="leave" (click)="leave()">Покинуть</button>
+</div>

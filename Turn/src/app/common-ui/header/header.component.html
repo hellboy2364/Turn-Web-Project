@@ -1,0 +1,22 @@
+<header>
+    <div>
+        <img id="logo" src="/images/Лого_3.png" alt="logo">
+        
+    </div>
+    <div>
+        <h1 id="nazv">Turn</h1>
+    </div>
+    <div id="align-right">
+        <nav>
+            <ul>
+                <li><a routerLink="">Главная</a></li>
+                <li><a routerLink="/tour">Турниры</a></li>
+                <li><a routerLink="/teams">Команды</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="ovt">
+        <button *ngIf="auth()===false" routerLink="/auth" class="signup-button1">Войти</button>
+        <button *ngIf="auth()===true" routerLink="/prof" class="signup-button2">Профиль</button>
+    </div>
+</header>

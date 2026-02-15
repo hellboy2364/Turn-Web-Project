@@ -1,0 +1,27 @@
+<div id="fon">
+    <div class="conteiner">
+        <div class = registerf>
+           <h1>Войти в профиль:</h1>
+           <form class="form" [formGroup]="logform" (ngSubmit)="onSubmit()">
+                <div [ngClass]="{'has-error': logform.get('email')?.invalid && logform.get('email')?.touched}">
+                    <input formControlName="email" type="text" class="pole" placeholder="Почта">
+                    <span class="form-help-text" *ngIf="logform.get('email')?.invalid && logform.get('email')?.touched">
+                        <span *ngIf="logform.get('email')?.errors?.['required']">Email не может быть пустым. </span>
+                        <span *ngIf="logform.get('email')?.errors?.['email']">Введите корректный email. </span>
+                    </span> 
+                </div>
+    
+                <div [ngClass]="{'has-error': logform.get('password')?.invalid && logform.get('password')?.touched}">
+                    <input formControlName="password" type="password" class="pole" placeholder="Пароль">
+                    <span class="form-help-text" *ngIf="logform.get('email')?.invalid && logform.get('email')?.touched">
+                        <span *ngIf="logform.get('password')?.errors?.['required']">Пароль не может быть пустым. </span>
+                        <span *ngIf="logform.get('password')?.errors?.['minlength'] && logform.get('password')?.errors?.['minlength']['requiredLength']">Пароль должен быть больше {{ logform.get('password')?.errors?.['minlength']['requiredLength'] }}символов. Сейчас {{ logform.get('password')?.errors?.['minlength']['actualLength'] }}.</span>
+                    </span>
+                </div>
+                <button type="submit" [disabled]="logform.invalid">Войти</button>
+           </form>
+           <button (click)="switchToRegister()">Нет аккаунта? Зарегистрироваться</button>
+        </div>
+    </div>
+</div>
+

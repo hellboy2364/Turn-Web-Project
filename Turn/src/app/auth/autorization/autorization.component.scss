@@ -1,0 +1,79 @@
+#fon {
+    background-image: url("/images/фон_авто.jpg");
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat; /* предотвращает повтор изображения */
+    background-size: cover; /* масштабирует изображение для заполнения фона */
+    background-attachment: fixed; /* делает изображение статичным */
+    background-position: center; /* центрирует изображение */
+}
+
+.registerf {
+    width: 40%;
+    background: rgba(235, 133, 16);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
+    display: grid;
+    place-items: center;
+}
+.conteiner{
+    padding: 75px;
+    display: grid;
+    place-items: center;
+}
+
+.registerf h1 {
+    margin-bottom: 20px;
+    color: #28662e;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(2, 254, 141);
+}
+.form{
+    width: 100%;
+    /* display: grid; */
+    align-items: center;
+}
+.registerf input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+.registerf button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.registerf button:hover {
+    background-color: #28662e;
+}
+
+button[disabled] {
+    background-color: rgba(0, 123, 255, 0.6) !important;
+    border-color: rgba(0, 123, 255, 0.6) !important;
+    cursor: no-drop;
+}
+
+.has-error span > span {
+    color: #28662e;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: rgb(2, 254, 141);
+}
+.has-error input {
+    border-color: #28662e !important;
+    color: #28662e;
+    border: 5px solid;
+    border-radius: 5px;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: rgb(2, 254, 141);
+}

@@ -1,0 +1,107 @@
+#fon {
+    background-image: url("/images/Главная страница.png");
+    background-size: 100%;
+    /* height: 750px; */
+    background-repeat: no-repeat; /* предотвращает повтор изображения */
+    background-size: cover; /* масштабирует изображение для заполнения фона */
+    background-attachment: fixed; /* делает изображение статичным */
+    background-position: center; /* центрирует изображение */
+    padding-bottom: 20px;
+}
+
+.pos-con {
+  display: flex;
+  justify-content: center; /* Центрирует элементы по горизонтали */
+  align-items: center; /* Центрирует элементы по вертикали */
+  padding-top: 10px;
+}
+
+h1 {
+    text-align: center; /* Центрирует текст внутри контейнера */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    max-width: 300px; /* Максимальная ширина контейнера */
+    color: #28662e;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(2, 254, 141);
+    border-radius: 20px;
+    font-family: 'main-t';
+    margin-left: 75px;
+}
+
+/* Секции внутри контейнера */
+.tournaments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+}
+
+/* Форма создания турнира */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #28662e;
+  border-radius: 15px;
+  padding: 20px;
+
+  label {
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  button {
+    align-self: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}
+
+
+.tournaments > p {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* Переиспользуемый компонент турнира */
+app-tourn {
+  display: block;
+  margin: 10px 0;
+}
+
+#blizh_tour {
+  text-align: center; /* Центрирует текст внутри контейнера */
+  padding: 20px; /* Внутренний отступ */
+  border-radius: 8px; /* Закругление углов */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+  max-width: 300px; /* Максимальная ширина контейнера */
+  color: #28662e;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(2, 254, 141);
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-top: 50px;
+}

@@ -1,0 +1,60 @@
+.tournament {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-left: 200px;
+  width: 700px;
+}
+
+#uchav {
+  background-color: #28662e; /* Цвет кнопки "Войти" */
+  color:white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+#leave{
+  background-color: #df1828; /* Цвет кнопки "Войти" */
+  color:white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+#uchav:hover {
+  background-color:  rgba(235, 133, 16);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+#leave:hover {
+  background-color:  rgba(235, 133, 16);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+button#participate {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #45a049;
+  }
+}

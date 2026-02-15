@@ -1,0 +1,29 @@
+<div id="fon">
+    <div class="team-creation-container">
+        <h1>Создание команды</h1>
+        <form [formGroup]="teamForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label for="name">Название команды</label>
+            <input id="name" formControlName="name" type="text" placeholder="Введите название команды" />
+          </div>
+      
+          <div>
+            <label for="gameType">Тип игры</label>
+            <input id="gameType" formControlName="gameType" type="text" placeholder="Введите тип игры" />
+          </div>
+      
+          <div>
+            <label for="members">Участники</label>
+            <input
+              id="members"
+              formControlName="members"
+              type="text"
+              placeholder="Введите участников через запятую (макс. 5)"
+            />
+          </div>
+      
+          <button type="submit" [disabled]="teamForm.invalid">Создать команду</button>
+        </form>
+    </div>
+      
+</div>

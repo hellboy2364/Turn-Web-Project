@@ -1,0 +1,110 @@
+#fon {
+    background-image: url("/images/Главная страница.png");
+    background-size: 100%;
+    height: 750px;
+    background-repeat: no-repeat; /* предотвращает повтор изображения */
+    background-size: cover; /* масштабирует изображение для заполнения фона */
+    background-attachment: fixed; /* делает изображение статичным */
+    background-position: center; /* центрирует изображение */
+}
+
+#centr-text {
+    display: flex;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали */
+    /* height: 100vh; /* Задает высоту области просмотра */
+    padding-top: 50px;
+}
+
+#conteiner1 {
+    text-align: center; /* Центрирует текст внутри контейнера */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    max-width: 600px; /* Максимальная ширина контейнера */
+    color: #28662e;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(2, 254, 141);
+    border-radius: 20px;
+    font-family: 'main-t';
+    
+}
+@font-face {
+    font-family: "maint-t";
+    src: url(/fonts/ofont.ru_Equilibrist.ttf);
+}
+
+/* #conteiner h1 {
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(2, 254, 141);
+} */
+
+#nazv {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-size: 30px;
+    color: rgba(235, 133, 16);
+}
+
+.maint {
+    color: rgba(235, 133, 16);
+}
+
+#left-text {
+    padding-left: 50px;
+    padding-top: 50px;
+    flex: 1; /* Занимает доступное пространство */
+}
+
+#conteiner2 {
+    text-align: left; /* Выравнивание текста влево для лучшего восприятия */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    max-width: 600px; /* Максимальная ширина контейнера */
+    color: #28662e;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(2, 254, 141);
+    border-radius: 20px;
+    font-family: 'main-t'; /* Не забудьте подключить шрифт */
+}
+
+.raspolozh {
+    display: flex; /* Использует flexbox для расположения текстового и кнопочного блоков */
+    align-items: flex-start; /* Выравнивает блоки по верхнему краю */
+    justify-content: space-between; /* Создает пространство между текстом и кнопками */
+    height: 100vh; /* Задает высоту контейнера на всю высоту окна просмотра */
+}
+
+.button-container {
+    display: flex; /* Использует flexbox для кнопок */
+    flex-direction: column; /* Расположение кнопок в столбик */
+    justify-content: center; /* Центрирует кнопки по вертикали */
+    align-items: center; /* Центрирует кнопки по горизонтали */
+    margin-left: 20px; /* Отступ между текстом и кнопками */
+    height: 100%; /* Чтобы кнопки занимали всю высоту контейнера */
+    max-height: 100%; /* Ограничивает максимальную высоту контейнера */
+    padding-right: 200px;
+}
+
+.action-button {
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    border: none; /* Убирает рамку */
+    padding: 20px 20px; /* Внутренний отступ */
+    margin: 5px 0; /* Отступ между кнопками */
+    border-radius: 4px; /* Закругление углов кнопок */
+    cursor: pointer; /* Указывает, что кнопки можно нажимать */
+    transition: background-color 0.3s; /* Плавный эффект при наведении */
+    width: 220px;
+    margin-bottom: 100px;
+    font-size: 15px;
+
+}
+
+.action-button:hover {
+    background-color: #45a049; /* Темнее при наведении */
+    color: rgb(254, 108, 3);
+    background-color: white;
+    font-weight: bold;
+}

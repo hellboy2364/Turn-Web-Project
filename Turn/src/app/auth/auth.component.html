@@ -1,0 +1,8 @@
+<div *ngIf="isRegistering">
+    <app-registration (toggle)="toggleForm(false)"></app-registration>
+</div>
+  
+<div *ngIf="!isRegistering">
+    <app-autorization (toggle)="toggleForm(true)"></app-autorization>
+</div>
+  

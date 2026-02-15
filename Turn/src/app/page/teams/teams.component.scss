@@ -1,0 +1,80 @@
+#fon {
+    background-image: url("/images/Главная страница.png");
+    background-size: 100%;
+    background-repeat: no-repeat; /* предотвращает повтор изображения */
+    background-size: cover; /* масштабирует изображение для заполнения фона */
+    background-attachment: fixed; /* делает изображение статичным */
+    background-position: center; /* центрирует изображение */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pos-con {
+  display: flex;
+  justify-content: center; /* Центрирует элементы по горизонтали */
+  align-items: center; /* Центрирует элементы по вертикали */
+  padding-top: 0px;
+}
+
+h1 {
+    text-align: center; /* Центрирует текст внутри контейнера */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    max-width: 300px; /* Максимальная ширина контейнера */
+    color: #28662e;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(2, 254, 141);
+    border-radius: 20px;
+    font-family: 'main-t';
+}
+
+.team-creation-container {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+h1 {
+  text-align: center;
+  color: #333;
+}
+  
+form div {
+  margin-bottom: 15px;
+}
+  
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+  
+input {
+  width: 100%;
+  padding: 8px;
+  margin-left: 17px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 550px;
+}
+  
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+  

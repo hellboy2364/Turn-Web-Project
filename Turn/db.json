@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "id": "602e",
+      "nickname": "1",
+      "name": "1",
+      "surname": "1",
+      "email": "1@1.ru",
+      "password": "testtest",
+      "teams": [
+        "bab7",
+        "a472"
+      ]
+    },
+    {
+      "id": "31ab",
+      "nickname": "2",
+      "name": "2",
+      "surname": "2",
+      "email": "2@2.ru",
+      "password": "testtest",
+      "teams": [
+        "2904",
+        "d381",
+        "8c16"
+      ]
+    },
+    {
+      "id": "b1e0",
+      "nickname": "3",
+      "name": "3",
+      "surname": "3",
+      "email": "3@3.ru",
+      "password": "testtest",
+      "teams": [
+        "7517",
+        "03b4",
+        "c8cb"
+      ]
+    },
+    {
+      "id": "8ed5",
+      "nickname": "4",
+      "name": "4",
+      "surname": "4",
+      "email": "4@4.ru",
+      "password": "$2a$10$EtTMNLSy1G6j9H028QvUsOtN4Nxd04GuEH4s0U3BFXrHSuoakglki",
+      "teams": [
+        "ee0c",
+        "80a7",
+        "5365"
+      ],
+      "turns": [
+        "331d"
+      ]
+    },
+    {
+      "id": "4d1d",
+      "nickname": "5",
+      "name": "5",
+      "surname": "5",
+      "email": "5@5.ru",
+      "password": "$2a$10$1ytA3XGg.vRFJjxb8tsm9ey5m3MOpF2ftfARDppYByc6.o7UrnP.2",
+      "teams": [
+        "2c34",
+        "843b",
+        "5365",
+        "181b",
+        "3309",
+        "4a12"
+      ],
+      "turns": [
+        "4120",
+        "adef",
+        "b819",
+        "331d",
+        "fe73",
+        "b937"
+      ]
+    },
+    {
+      "id": "1c7b",
+      "email": "petux@mail.ru",
+      "password": "686a0c4d6d4175239a2977e7b54b40893cbf90dadacacc0d2f6a9b4e647bd356",
+      "name": "petux",
+      "registeredEvents": []
+    },
+    {
+      "id": "c679",
+      "nickname": "wqeqwe",
+      "name": "qweqwe",
+      "surname": "qweqwe",
+      "email": "5@5.ru",
+      "password": "$2a$10$wGhQvWV4bJ9PHqdu6ZaWK.9LRz1k6YqAoSuAa5npngvgSmTDP7jxS",
+      "teams": [],
+      "turns": []
+    }
+  ],
+  "teams": [
+    {
+      "id": "a472",
+      "name": "test7",
+      "gameType": "CS2",
+      "members": [
+        "602e"
+      ],
+      "creatorId": "602e"
+    },
+    {
+      "id": "7517",
+      "name": "test9",
+      "gameType": "CS2",
+      "members": [
+        "b1e0"
+      ],
+      "creatorId": "b1e0"
+    },
+    {
+      "id": "03b4",
+      "name": "test10",
+      "gameType": "CS2",
+      "members": [
+        "b1e0"
+      ],
+      "creatorId": "b1e0"
+    },
+    {
+      "id": "c8cb",
+      "name": "test11",
+      "gameType": "CS2",
+      "members": [
+        "b1e0"
+      ],
+      "creatorId": "b1e0"
+    },
+    {
+      "id": "ee0c",
+      "name": "test12",
+      "gameType": "CS2",
+      "members": [
+        "8ed5"
+      ],
+      "creatorId": "8ed5"
+    },
+    {
+      "id": "80a7",
+      "name": "test13",
+      "gameType": "CS2",
+      "members": [
+        "8ed5"
+      ],
+      "creatorId": "8ed5"
+    },
+    {
+      "id": "2c34",
+      "name": "test15",
+      "gameType": "CS2",
+      "members": [
+        "4d1d"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "843b",
+      "name": "test16",
+      "gameType": "CS2",
+      "members": [
+        "4d1d"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "5365",
+      "name": "test17",
+      "gameType": "CS2",
+      "members": [
+        "4d1d",
+        "8ed5"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "181b",
+      "name": "Punters",
+      "gameType": "CS2",
+      "members": [
+        "4d1d"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "3309",
+      "name": "team1",
+      "gameType": "CS2",
+      "members": [
+        "4d1d"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "4a12",
+      "name": "team2",
+      "gameType": "CS2",
+      "members": [
+        "4d1d"
+      ],
+      "creatorId": "4d1d"
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "6b6e",
+      "name": "test8",
+      "date": "2024-12-25",
+      "time": "05:00",
+      "max_num": 5,
+      "format": "5v5",
+      "participants": [],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "fe73",
+      "name": "test9",
+      "date": "2024-12-26",
+      "time": "10:00",
+      "max_num": 1,
+      "format": "5v5",
+      "participants": [
+        "843b"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "331d",
+      "name": "test10",
+      "date": "2024-12-27",
+      "time": "11:00",
+      "max_num": 4,
+      "format": "5v5",
+      "participants": [
+        "5365"
+      ],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "0758",
+      "name": "фывфыв",
+      "date": "2024-12-26",
+      "time": "11:00",
+      "max_num": 3,
+      "format": "5v5",
+      "participants": [],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "4682",
+      "name": "фывфыв",
+      "date": "2024-12-26",
+      "time": "19:00",
+      "max_num": 4,
+      "format": "5v5",
+      "participants": [],
+      "creatorId": "4d1d"
+    },
+    {
+      "id": "b937",
+      "name": "asdasd",
+      "date": "2024-12-28",
+      "time": "11:00",
+      "max_num": 4,
+      "format": "5v5",
+      "participants": [
+        "4a12"
+      ],
+      "creatorId": "4d1d"
+    }
+  ]
+}

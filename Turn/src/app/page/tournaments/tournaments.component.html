@@ -1,0 +1,98 @@
+<div id="fon">
+    <div class="pos-con">
+        <div class="tournaments">
+            <h1>Создание турнира</h1>
+            <form #tournamentForm="ngForm" (ngSubmit)="createTournament($event, tournamentForm)" novalidate>
+                <label>
+                    Название:
+                    <input 
+                        name="Name" 
+                        type="text" 
+                        [(ngModel)]="newTournament.name" 
+                        #name="ngModel" 
+                        required 
+                        maxlength="50" 
+                        [class.invalid]="name.invalid && name.touched">
+                </label>
+                <div *ngIf="name.invalid && name.touched" class="error">
+                    <small *ngIf="name.errors?.['required']">Название обязательно.</small>
+                    <small *ngIf="name.errors?.['maxlength']">Название не может превышать 50 символов.</small>
+                </div>
+
+                <label>
+                    Дата:
+                    <input 
+                        name="Date" 
+                        type="date" 
+                        [(ngModel)]="newTournament.date" 
+                        #date="ngModel" 
+                        required 
+                        [min]="today" 
+                        [class.invalid]="date.invalid && date.touched">
+                </label>
+                <div *ngIf="date.invalid && date.touched" class="error">
+                    <small *ngIf="date.errors?.['required']">Дата обязательна.</small>
+                    <small *ngIf="date.errors?.['min']">Дата не может быть в прошлом.</small>
+                </div>
+
+                <label>
+                    Время:
+                    <input 
+                        name="Time" 
+                        type="time" 
+                        [(ngModel)]="newTournament.time" 
+                        #time="ngModel" 
+                        required 
+                        (change)="validateTime(time)" 
+                        [class.invalid]="time.invalid && time.touched">
+                </label>
+                <div *ngIf="time.invalid && time.touched" class="error">
+                    <small *ngIf="time.errors?.['required']">Время обязательно.</small>
+                    <small *ngIf="time.errors?.['invalidTime']">Время должно быть не ранее чем через 2 часа.</small>
+                </div>
+                
+
+                <label>
+                    Максимальное количество участников:
+                    <input 
+                        name="Col" 
+                        type="number" 
+                        [(ngModel)]="newTournament.max_num" 
+                        #maxNum="ngModel" 
+                        required 
+                        min="1" 
+                        [class.invalid]="maxNum.invalid && maxNum.touched">
+                </label>
+                <div *ngIf="maxNum.invalid && maxNum.touched" class="error">
+                    <small *ngIf="maxNum.errors?.['required']">Поле обязательно.</small>
+                    <small *ngIf="maxNum.errors?.['min']">Число участников должно быть больше 0.</small>
+                </div>
+
+                <label>
+                    Формат:
+                    <input 
+                        name="Format" 
+                        type="text" 
+                        [(ngModel)]="newTournament.format" 
+                        #format="ngModel" 
+                        required 
+                        pattern=".*v.*" 
+                        [class.invalid]="format.invalid && format.touched">
+                </label>
+                <div *ngIf="format.invalid && format.touched" class="error">
+                    <small *ngIf="format.errors?.['required']">Формат обязателен.</small>
+                    <small *ngIf="format.errors?.['pattern']">Формат должен содержать букву "v".</small>
+                </div>
+
+                <button type="submit" [disabled]="tournamentForm.invalid">Создать турнир</button>
+            </form>
+        </div>
+    </div>
+    <h2 id="blizh_tour">Ближайшие турниры</h2>
+    <div *ngIf="tournaments.length > 0; else noTournaments">
+        <app-tourn *ngFor="let tournament of tournaments" [tournament]="tournament"></app-tourn>
+    </div>
+    <ng-template #noTournaments>
+        <p>Нет ближайших турниров.</p>
+    </ng-template>
+</div>
